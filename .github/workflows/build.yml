@@ -33,7 +33,7 @@ jobs:
             artifact_name: macos-release
           - os: macos-latest
             build_target: ios
-            build_path: build/ios/iphoneos
+            build_path: build/ios/iphoneos/komiyomi.ipa
             artifact_name: ios-release
 
     steps:
@@ -63,7 +63,12 @@ jobs:
 
       - name: Build iOS
         if: matrix.build_target == 'ios'
-        run: flutter build ios --release --no-codesign
+        run: |
+          flutter build ios --release --no-codesign
+          mkdir -p build/ios/iphoneos/Payload
+          cp -r build/ios/iphoneos/Runner.app build/ios/iphoneos/Payload/Runner.app
+          cd build/ios/iphoneos
+          zip -r -q komiyomi.ipa Payload
 
       - name: Build ${{ matrix.build_target }}
         if: matrix.build_target != 'ios'
