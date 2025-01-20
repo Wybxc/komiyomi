@@ -1,0 +1,57 @@
+fragment Manga on MangaType {
+  id
+  title
+  thumbnailUrl
+}
+
+fragment MangaDetails on MangaType {
+  ...Manga
+  initialized
+  author
+  artist
+  status
+  inLibrary
+  description
+  realUrl
+  genre
+  source {
+    id
+    displayName
+    lang
+  }
+}
+
+query AllCategories {
+  categories {
+    nodes {
+      mangas {
+        nodes {
+          ...Manga
+        }
+      }
+    }
+  }
+}
+
+query MangaInfo($id: Int!) {
+  manga(id: $id) {
+    ...MangaDetails
+  }
+}
+
+mutation FetchMangaInfo($id: Int!) {
+  fetchManga(input: { id: $id }) {
+    manga {
+      ...MangaDetails
+    }
+  }
+}
+
+mutation FetchSourceMangas($input: FetchSourceMangaInput!) {
+  fetchSourceManga(input: $input) {
+    hasNextPage
+    mangas {
+      ...Manga
+    }
+  }
+}

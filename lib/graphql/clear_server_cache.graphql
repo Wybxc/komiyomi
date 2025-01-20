@@ -1,0 +1,7 @@
+mutation ClearServerCache {
+  clearCachedImages(input: { cachedPages: true, cachedThumbnails: true }) {
+    cachedPages
+    cachedThumbnails
+    downloadedThumbnails
+  }
+}

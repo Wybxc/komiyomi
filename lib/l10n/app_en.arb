@@ -1,0 +1,426 @@
+{
+    "@@locale": "en",
+    "appTitle": "Flutter Demo",
+    "@appTitle": {
+        "description": "The title of the application"
+    },
+    "login": "Connect to Server",
+    "@login": {
+        "description": "Text for connect to server button and page title"
+    },
+    "serverAddress": "Server Address",
+    "@serverAddress": {
+        "description": "Label for server address input field"
+    },
+    "username": "Username",
+    "@username": {
+        "description": "Label for username input field"
+    },
+    "password": "Password",
+    "@password": {
+        "description": "Label for password input field"
+    },
+    "useHttpAuth": "Use HTTP Basic Auth",
+    "@useHttpAuth": {
+        "description": "Toggle label for HTTP Basic Authentication"
+    },
+    "pleaseEnterUrl": "Please enter URL",
+    "@pleaseEnterUrl": {
+        "description": "Validation message when URL is empty"
+    },
+    "pleaseEnterValidUrl": "Please enter a valid HTTP(S) URL",
+    "@pleaseEnterValidUrl": {
+        "description": "Validation message for invalid URL format"
+    },
+    "invalidUrlFormat": "Invalid URL format",
+    "@invalidUrlFormat": {
+        "description": "Error message for malformed URL"
+    },
+    "pleaseEnterUsername": "Please enter username",
+    "@pleaseEnterUsername": {
+        "description": "Validation message when username is empty"
+    },
+    "pleaseEnterPassword": "Please enter password",
+    "@pleaseEnterPassword": {
+        "description": "Validation message when password is empty"
+    },
+    "confirmLogout": "Confirm Disconnect",
+    "@confirmLogout": {
+        "description": "Title for disconnect confirmation dialog"
+    },
+    "logoutConfirmMessage": "Are you sure you want to disconnect from the server?",
+    "@logoutConfirmMessage": {
+        "description": "Message in disconnect confirmation dialog"
+    },
+    "cancel": "Cancel",
+    "@cancel": {
+        "description": "Label for cancel button"
+    },
+    "confirm": "Confirm",
+    "@confirm": {
+        "description": "Label for confirm button"
+    },
+    "clickCounter": "You have clicked the button:",
+    "@clickCounter": {
+        "description": "Text showing number of button clicks"
+    },
+    "increment": "Increment",
+    "@increment": {
+        "description": "Label for increment button"
+    },
+    "logout": "Logout",
+    "@logout": {
+        "description": "Label for logout button"
+    },
+    "logoutTitle": "Confirm Logout",
+    "@logoutTitle": {
+        "description": "Title for logout confirmation dialog"
+    },
+    "logoutMessage": "Are you sure you want to logout?",
+    "@logoutMessage": {
+        "description": "Message in logout confirmation dialog"
+    },
+    "bookshelf": "Bookshelf",
+    "@bookshelf": {
+        "description": "Label for bookshelf navigation item"
+    },
+    "updates": "Updates",
+    "@updates": {
+        "description": "Label for updates navigation item"
+    },
+    "browse": "Browse",
+    "@browse": {
+        "description": "Label for browse navigation item"
+    },
+    "downloads": "Downloads",
+    "@downloads": {
+        "description": "Label for downloads navigation item"
+    },
+    "settings": "Settings",
+    "@settings": {
+        "description": "Label for settings navigation item"
+    },
+    "addCategory": "Add Category",
+    "@addCategory": {
+        "description": "Tooltip for add category button"
+    },
+    "refresh": "Refresh",
+    "@refresh": {
+        "description": "Tooltip for refresh button"
+    },
+    "search": "Search",
+    "@search": {
+        "description": "Tooltip for search button"
+    },
+    "filter": "Filter",
+    "@filter": {
+        "description": "Tooltip for filter button"
+    },
+    "clearAll": "Clear All",
+    "@clearAll": {
+        "description": "Tooltip for clear all downloads button"
+    },
+    "resetSettings": "Reset Settings",
+    "@resetSettings": {
+        "description": "Tooltip for reset settings button"
+    },
+    "retry": "Retry",
+    "@retry": {
+        "description": "Label for retry button"
+    },
+    "noMangaFound": "No manga found",
+    "@noMangaFound": {
+        "description": "Message shown when no manga is available"
+    },
+    "preferences": "Preferences",
+    "@preferences": {
+        "description": "Title for preferences page"
+    },
+    "appearance": "Appearance",
+    "@appearance": {
+        "description": "Section title for appearance settings"
+    },
+    "language": "Language",
+    "@language": {
+        "description": "Label for language selection"
+    },
+    "localeDisplayName": "English",
+    "@localeDisplayName": {
+        "description": "Name of the current language"
+    },
+    "theme": "Theme",
+    "@theme": {
+        "description": "Label for theme selection"
+    },
+    "systemTheme": "System",
+    "@systemTheme": {
+        "description": "Label for system theme option"
+    },
+    "lightTheme": "Light",
+    "@lightTheme": {
+        "description": "Label for light theme option"
+    },
+    "darkTheme": "Dark",
+    "@darkTheme": {
+        "description": "Label for dark theme option"
+    },
+    "fontSize": "Font Size",
+    "@fontSize": {
+        "description": "Label for font size selection"
+    },
+    "small": "Small",
+    "@small": {
+        "description": "Label for small font size option"
+    },
+    "medium": "Medium",
+    "@medium": {
+        "description": "Label for medium font size option"
+    },
+    "large": "Large",
+    "@large": {
+        "description": "Label for large font size option"
+    },
+    "chapterNumberName": "Chapter {number} {name}",
+    "@chapterNumberName": {
+        "description": "Chapter title with number and name",
+        "placeholders": {
+            "number": {
+                "type": "String"
+            },
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "unknownScanlator": "Unknown Group",
+    "@unknownScanlator": {
+        "description": "Text shown when scanlator is unknown"
+    },
+    "noChapters": "No Chapters",
+    "@noChapters": {
+        "description": "Message shown when there are no chapters"
+    },
+    "chaptersCount": "{count} Chapters",
+    "@chaptersCount": {
+        "description": "Number of chapters",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "markAsRead": "Mark as Read",
+    "@markAsRead": {
+        "description": "Button to mark chapter as read"
+    },
+    "markAllAsRead": "Mark All as Read",
+    "@markAllAsRead": {
+        "description": "Button to mark all chapters as read"
+    },
+    "showChapterNumber": "Show Chapter Number",
+    "@showChapterNumber": {
+        "description": "Option to show chapter numbers"
+    },
+    "copyToClipboard": "Copied to clipboard",
+    "@copyToClipboard": {
+        "description": "Message when text is copied"
+    },
+    "copyFailed": "Copy failed",
+    "@copyFailed": {
+        "description": "Message when copy operation fails"
+    },
+    "description": "Description",
+    "@description": {
+        "description": "Section title for manga description"
+    },
+    "tags": "Tags",
+    "@tags": {
+        "description": "Section title for manga tags"
+    },
+    "unknown": "Unknown",
+    "@unknown": {
+        "description": "Text for unknown values"
+    },
+    "author": "Author",
+    "@author": {
+        "description": "Label for manga author"
+    },
+    "artist": "Artist",
+    "@artist": {
+        "description": "Label for manga artist"
+    },
+    "status": "{status}",
+    "@status": {
+        "description": "Manga status text",
+        "placeholders": {
+            "status": {
+                "type": "String"
+            }
+        }
+    },
+    "source": "Source",
+    "@source": {
+        "description": "Label for manga source"
+    },
+    "inLibrary": "In Library",
+    "@inLibrary": {
+        "description": "Text when manga is in library"
+    },
+    "addToLibrary": "Add to Library",
+    "@addToLibrary": {
+        "description": "Button to add manga to library"
+    },
+    "openInBrowser": "Open in Browser",
+    "@openInBrowser": {
+        "description": "Button to open manga in browser"
+    },
+    "download": "Download",
+    "@download": {
+        "description": "Button to download chapters"
+    },
+    "bookmark": "Bookmark",
+    "@bookmark": {
+        "description": "Button to bookmark chapters"
+    },
+    "introduction": "Introduction",
+    "@introduction": {
+        "description": "Section title for manga introduction"
+    },
+    "chapterNum": "Ch. {number}",
+    "@chapterNum": {
+        "description": "Chapter number format",
+        "placeholders": {
+            "number": {
+                "type": "String"
+            }
+        }
+    },
+    "readManga": "Read",
+    "@readManga": {
+        "description": "Text for start reading button"
+    },
+    "startReading": "Start Reading",
+    "@startReading": {
+        "description": "Button to start reading manga"
+    },
+    "continueReading": "Continue Reading",
+    "@continueReading": {
+        "description": "Button to continue reading manga"
+    },
+    "lastRead": "Last read: Chapter {number}",
+    "@lastRead": {
+        "description": "Shows last read chapter number",
+        "placeholders": {
+            "number": {
+                "type": "String"
+            }
+        }
+    },
+    "lastUpdated": "Updated {time}",
+    "@lastUpdated": {
+        "description": "Shows manga last update time",
+        "placeholders": {
+            "time": {
+                "type": "String"
+            }
+        }
+    },
+    "downloadCount": "{count, plural, =0{No chapters} =1{1 chapter} other{{count} chapters}} downloaded",
+    "@downloadCount": {
+        "description": "Shows number of downloaded chapters",
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "copyTitle": "Copy Title",
+    "@copyTitle": {
+        "description": "Tooltip for copy title button"
+    },
+    "moreOptions": "More Options", 
+    "@moreOptions": {
+        "description": "Tooltip for more options button"
+    },
+    "authorLabel": "Author",
+    "@authorLabel": {
+        "description": "Label for author field"
+    },
+    "artistLabel": "Artist", 
+    "@artistLabel": {
+        "description": "Label for artist field"
+    },
+    "statusLabel": "Status",
+    "@statusLabel": {
+        "description": "Label for status field"
+    },
+    "sourceLabel": "Source",
+    "@sourceLabel": {
+        "description": "Label for source field"
+    },
+    "mangaStatusOngoing": "Ongoing",
+    "@mangaStatusOngoing": {
+        "description": "Status text for ongoing manga"
+    },
+    "mangaStatusCompleted": "Completed",
+    "@mangaStatusCompleted": {
+        "description": "Status text for completed manga"
+    },
+    "mangaStatusLicensed": "Licensed",
+    "@mangaStatusLicensed": {
+        "description": "Status text for licensed manga"
+    },
+    "mangaStatusPublishingFinished": "Publishing Finished",
+    "@mangaStatusPublishingFinished": {
+        "description": "Status text for manga with finished publishing"
+    },
+    "mangaStatusCancelled": "Cancelled",
+    "@mangaStatusCancelled": {
+        "description": "Status text for cancelled manga"
+    },
+    "mangaStatusOnHiatus": "On Hiatus",
+    "@mangaStatusOnHiatus": {
+        "description": "Status text for manga on hiatus"
+    },
+    "openUrlError": "Failed to open link: {error}",
+    "@openUrlError": {
+        "description": "Error message when URL fails to open",
+        "placeholders": {
+            "error": {
+                "type": "String"
+            }
+        }
+    },
+    "showNsfwContent": "Show NSFW (18+) Content",
+    "@showNsfwContent": {
+        "description": "Toggle for showing NSFW content"
+    },
+    "showNsfwContentDescription": "Show NSFW (18+) extensions and sources",
+    "@showNsfwContentDescription": {
+        "description": "Description for NSFW content toggle"
+    },
+    "showSourceThumbnails": "Show Source Thumbnails",
+    "@showSourceThumbnails": {
+        "description": "Toggle for showing source thumbnails"
+    },
+    "track": "Track",
+    "@track": {
+        "description": "Label for track button"
+    },
+    "addedToLibrary": "Added to library",
+    "@addedToLibrary": {
+        "description": "Message shown when manga is added to library"
+    },
+    "removedFromLibrary": "Removed from library",
+    "@removedFromLibrary": {
+        "description": "Message shown when manga is removed from library"
+    },
+    "undo": "Undo",
+    "@undo": {
+        "description": "Label for undo action"
+    },
+    "darkMode": "Dark mode",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark"
+}

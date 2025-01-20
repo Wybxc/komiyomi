@@ -1,0 +1,21 @@
+fragment Source on SourceType {
+  id
+  name
+  displayName
+  lang
+  iconUrl
+  isNsfw
+  supportsLatest
+  extension {
+    pkgName
+    repo
+  }
+}
+
+query SourcesList {
+  sources {
+    nodes {
+      ...Source
+    }
+  }
+}

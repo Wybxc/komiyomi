@@ -1,0 +1,37 @@
+query ChapterUpdates(
+  $filter: ChapterFilterInput
+  $order: [ChapterOrderInput!]
+) {
+  chapters(filter: $filter, order: $order) {
+    nodes {
+      id
+      name
+      mangaId
+      scanlator
+      realUrl
+      sourceOrder
+      chapterNumber
+      isRead
+      isDownloaded
+      isBookmarked
+      fetchedAt
+      uploadDate
+      manga {
+        id
+        title
+        thumbnailUrl
+        thumbnailUrlLastFetched
+        inLibrary
+        initialized
+        sourceId
+      }
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
+    totalCount
+  }
+}

@@ -1,0 +1,14 @@
+query MigratableSources {
+  mangas(condition: { inLibrary: true }) {
+    nodes {
+      sourceId
+      source {
+        id
+        name
+        displayName
+        lang
+        iconUrl
+      }
+    }
+  }
+}

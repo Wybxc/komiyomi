@@ -1,0 +1,15 @@
+mutation UpdateMangaInLibrary($id: Int!, $inLibrary: Boolean!) {
+  updateManga(
+    input: {
+      clientMutationId: "update_manga_in_library"
+      id: $id
+      patch: { inLibrary: $inLibrary }
+    }
+  ) {
+    manga {
+      id
+      inLibrary
+      title
+    }
+  }
+}

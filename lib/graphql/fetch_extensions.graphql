@@ -1,0 +1,17 @@
+mutation FetchExtensions($input: FetchExtensionsInput = {}) {
+  fetchExtensions(input: $input) {
+    extensions {
+      pkgName
+      name
+      lang
+      versionCode
+      versionName
+      iconUrl
+      repo
+      isNsfw
+      isInstalled
+      isObsolete
+      hasUpdate
+    }
+  }
+}

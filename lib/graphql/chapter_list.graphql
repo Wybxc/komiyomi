@@ -1,0 +1,30 @@
+fragment Chapter on ChapterType {
+  id
+  name
+  mangaId
+  chapterNumber
+  scanlator
+  uploadDate
+}
+
+mutation FetchChapterList($mangaId: Int!) {
+  fetchChapters(input: { mangaId: $mangaId }) {
+    __typename
+  }
+}
+
+query ChapterList(
+  $mangaId: Int!
+  $orderBy: ChapterOrderBy
+  $orderByType: SortOrder
+) {
+  chapters(
+    condition: { mangaId: $mangaId }
+    orderBy: $orderBy
+    orderByType: $orderByType
+  ) {
+    nodes {
+      ...Chapter
+    }
+  }
+}
