@@ -1,6 +1,8 @@
 import 'dart:async';
+
 import 'package:gql/ast.dart';
 import 'package:graphql/client.dart' as graphql;
+
 import 'schema.graphql.dart';
 
 class Fragment$Manga {
