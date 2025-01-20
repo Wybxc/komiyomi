@@ -13,12 +13,15 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
         include:
           - os: ubuntu-latest
             build_target: linux
             build_path: build/linux/x64/release/bundle
             artifact_name: linux-release
+          - os: ubuntu-latest
+            build_target: apk
+            build_path: build/app/outputs/flutter-apk/app-release.apk
+            artifact_name: android-release
           - os: windows-latest
             build_target: windows
             build_path: build/windows/x64/runner/Release
@@ -27,10 +30,6 @@ jobs:
             build_target: macos
             build_path: build/macos/Build/Products/Release
             artifact_name: macos-release
-          - os: ubuntu-latest
-            build_target: apk
-            build_path: build/app/outputs/flutter-apk/app-release.apk
-            artifact_name: android-release
           - os: macos-latest
             build_target: ios
             build_path: build/ios/iphoneos
